@@ -37,6 +37,11 @@ public class PrimeFactorsTest {
 		assertEquals( list( 3 ), generate( 3 ) );
 	}
 
+	@Test
+	public void testFour() {
+		assertEquals( list( 2, 2 ), generate( 4 ) );
+	}
+
 	private List<Integer> list( int... ints ) {
 		List<Integer> list = new ArrayList<>();
 		for( int i : ints )
