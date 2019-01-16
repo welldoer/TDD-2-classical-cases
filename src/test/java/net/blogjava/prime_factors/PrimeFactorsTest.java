@@ -58,6 +58,26 @@ public class PrimeFactorsTest {
 		assertEquals( list( 3, 3 ), generate( 9 ) );
 	}
 
+	@Test
+	public void test67() {
+		assertEquals( list( 2, 3, 7 ), generate( 42 ) );
+	}
+
+	@Test
+	public void test81() {
+		assertEquals( list( 3, 3, 3, 3 ), generate( 81 ) );
+	}
+
+	@Test
+	public void test105() {
+		assertEquals( list( 3, 5, 7 ), generate( 105 ) );
+	}
+
+	@Test
+	public void test252() {
+		assertEquals( list( 2, 2, 3, 3, 7 ), generate( 252 ) );
+	}
+
 	private List<Integer> list( int... ints ) {
 		List<Integer> list = new ArrayList<>();
 		for( int i : ints )
