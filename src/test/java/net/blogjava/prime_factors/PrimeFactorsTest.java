@@ -3,7 +3,6 @@ package net.blogjava.prime_factors;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import org.junit.Before;
@@ -20,8 +19,16 @@ public class PrimeFactorsTest {
 		assertEquals( list(), PrimeFactors.generate( 1 ) );
 	}
 
-	private List<Integer> list() {
-		return new ArrayList<Integer>();
+	@Test
+	public void testTwo() {
+		assertEquals( list( 2 ), PrimeFactors.generate( 2 ) );
+	}
+
+	private List<Integer> list( int... ints ) {
+		List<Integer> list = new ArrayList<>();
+		for( int i : ints )
+			list.add( i );
+		return list;
 	}
 
 }

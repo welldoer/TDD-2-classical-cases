@@ -1,7 +1,6 @@
 package net.blogjava.prime_factors;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class PrimeFactors {
@@ -10,8 +9,11 @@ public class PrimeFactors {
 		throw new IllegalStateException( "Utility class" );
 	}
 
-	public static List<Integer> generate(int i) {
-		return Collections.emptyList();
+	public static List<Integer> generate( int n ) {
+		List<Integer> primes = new ArrayList<>();
+		if( n > 1 )
+			primes.add( 2 );
+		return primes;
 	}
 
 }
