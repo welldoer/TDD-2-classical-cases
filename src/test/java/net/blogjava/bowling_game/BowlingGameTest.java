@@ -26,7 +26,7 @@ public class BowlingGameTest {
 		assertEquals( 20, game.score() );
 	}
 
-//	@Test
+	@Test
 	public void testOneSpare() {
 		game.roll( 5 );
 		game.roll( 5 );			// Spare
