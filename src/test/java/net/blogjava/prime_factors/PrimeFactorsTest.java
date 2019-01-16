@@ -3,6 +3,7 @@ package net.blogjava.prime_factors;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.junit.Before;
