@@ -1,4 +1,4 @@
-package net.blogjava.primeFactors;
+package net.blogjava.prime_factors;
 
 import static org.junit.Assert.*;
 
