@@ -8,17 +8,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.experimental.categories.Categories.ExcludeCategory;
+import org.junit.rules.ExpectedException;
 
 public class PrimeFactorsTest {
+	
+	@Rule
+	public ExpectedException expectedException = ExpectedException.none();
 
 	@Before
 	public void setUp() throws Exception {
 	}
 
-	@Test( expected = IllegalStateException.class )
+	@Test
 	public void testIllegalConstruction() {
+		expectedException.expect( IllegalStateException.class );
+		expectedException.expectMessage( "Utility class");
 		new PrimeFactors();
 	}
 	
