@@ -9,6 +9,7 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Categories.ExcludeCategory;
 
 public class PrimeFactorsTest {
 
@@ -16,6 +17,11 @@ public class PrimeFactorsTest {
 	public void setUp() throws Exception {
 	}
 
+	@Test( expected = IllegalStateException.class )
+	public void testIllegalConstruction() {
+		new PrimeFactors();
+	}
+	
 	@Test
 	public void testOne() {
 		assertEquals( list(), generate( 1 ) );

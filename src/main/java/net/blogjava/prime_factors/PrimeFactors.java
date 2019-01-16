@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PrimeFactors {
 	
-	private PrimeFactors() {
+	PrimeFactors() {
 		throw new IllegalStateException( "Utility class" );
 	}
 
